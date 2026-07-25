@@ -41,7 +41,7 @@ EXTENSION_LIST = [
     ".exe"
     ]
 
-MADE_FOLDER_LIST = ["html", "images", "videos", "documents", "archives", "audio", "plaintext", "pdf", "python", "exe", "miscs"]
+FOLDER_LIST = ["html", "images", "videos", "documents", "archives", "audio", "plaintext", "pdf", "python", "exe", "miscs"]
 
-folder_path_list = [ DOWNLOADS_PATH / folder for folder in MADE_FOLDER_LIST]
+folder_path_list = [ DOWNLOADS_PATH / folder for folder in FOLDER_LIST]
 MISCS_PATH = DOWNLOADS_PATH / "miscs"

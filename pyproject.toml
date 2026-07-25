@@ -1,7 +1,32 @@
 [project]
-name = "df-organizer"
+name = "downloads_organizer"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.14"
 dependencies = []
+requires-python = ">=3.14"
+description = "Made to organize my downloads!! My first automation ;3"
+authors = "Railerival"
+readme = "README.md"
+license = "MIT"
+license-files = "LICENSE.md"
+# keywords = ["downloads","organizer"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: End Users/Desktop",
+  "Topic :: Desktop Environment :: File Managers",
+  "Programming Language :: Python :: 3.14",
+  "License :: OSI Approved :: MIT License"
+]
+
+[project.optional-dependencies]
+tester = "pytest>=9.1.1"
+
+[project.urls]
+Repository = "https://github.com/Railerival/Downloads_organizer"
+Issues = "https://github.com/Railerival/Downloads_organizer/issues"
+# Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+[project.scripts]
+run_program = "run_pgm.py"
+
+[project.entry-points]
+entry_point = "run_pgm.py"
