@@ -8,7 +8,8 @@ authors = "Railerival"
 readme = "README.md"
 license = "MIT"
 license-files = "LICENSE.md"
-# keywords = ["downloads","organizer"]
+#need to be added 
+keywords = ["downloads","organizer","file_sorter"] 
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: End Users/Desktop",
@@ -18,7 +19,7 @@ classifiers = [
 ]
 
 [project.optional-dependencies]
-tester = "pytest>=9.1.1"
+tester = ["pytest>=9.1.1"]
 
 [project.urls]
 Repository = "https://github.com/Railerival/Downloads_organizer"

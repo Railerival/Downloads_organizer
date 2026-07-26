@@ -12,15 +12,18 @@ wheels = [
 ]
 
 [[package]]
-name = "df-organizer"
+name = "downloads-organizer"
 version = "0.1.0"
 source = { virtual = "." }
-dependencies = [
+
+[package.optional-dependencies]
+tester = [
     { name = "pytest" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pytest", specifier = ">=9.1.1" }]
+requires-dist = [{ name = "pytest", marker = "extra == 'tester'", specifier = ">=9.1.1" }]
+provides-extras = ["tester"]
 
 [[package]]
 name = "iniconfig"
