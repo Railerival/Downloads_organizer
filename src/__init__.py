@@ -63,6 +63,7 @@ def main(child_list) -> None:
         print("CHECK [✅]:all the prefixes in DIRECTORIES starts with \".\"")
     else:
         print("CHECK [❌]:all the prefixes in DIRECTORIES doesn't start with \".\"")
+        sys.exit()
 
     ext_check = True
 
