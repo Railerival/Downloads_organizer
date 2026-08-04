@@ -1,7 +1,7 @@
 import sys
 import time
 import shutil
-import src.settings as settings
+from . import settings
 
 child_list = []
 

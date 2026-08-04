@@ -1,5 +1,26 @@
-Caution: Dont use it right now, it has not been tested well or use it on a test folder under your own risk
+# Downloads folder organizer[Alpha-stage]
 
-This project is used to organize the downloads folder
-u can customize it to your needs by changing stuff in settings.py
+### What is it?
+This is a downloads folder organizer made in python!
+it sorts the given folder into different folders with respect to the extensions of the files in it. If they dont have an extension they go into the miscs folder.
+
+**Developer's note**  :  Everything looks fine i just feel like testing a bit more before releasing it, but that will take some time.....So use it cautiouslyon your own risk
+
+### Example:
+`Before:`
+![alt text](image.png)
+
+`After`
+![alt text](assets/after.png)
+
+### How to make custom folder and add/remove extensions?
+
+You can change it in the `src/settings.py` file
+- if u want to add more extensions just add the extensions in `DIRECTORIES` and `EXTENSION_LIST`and just group them into the folder u want
+- if u want to add a new custom folder just change in `DIRECTORIES` and `FOLDER_LIST`
+
+### Why i made it:
+
+I didnt like how my downloads folder looked, so i made this project `¯\_(ツ)_/¯`  
+Also this is probably my first automation `:)`
 
