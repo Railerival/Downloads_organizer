@@ -4,7 +4,7 @@
 This is a downloads folder organizer made in python!
 it sorts the given folder into different folders with respect to the extensions of the files in it. If they dont have an extension they go into the miscs folder.
 
-**Developer's note**  :  Everything looks fine i just feel like testing a bit more before releasing it, but that will take some time.....So use it cautiouslyon your own risk
+**Developer's note**  :  Everything looks fine i just feel like testing a bit more before releasing it, but that will take some time.....So use it cautiously on your own risk
 
 ### Example:
 `Before:`
