@@ -96,6 +96,5 @@ FOLDER_LIST = [k for k, v in DIRECTORIES.items()]
 EXTENSION_LIST = [
     extension for k, v in DIRECTORIES.items() for extension in v if v != ()
 ]
-print(EXTENSION_LIST)
 folder_path_list = [DOWNLOADS_PATH / folder for folder in FOLDER_LIST]
 MISCS_PATH = DOWNLOADS_PATH / "miscs"
