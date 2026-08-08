@@ -13,11 +13,14 @@ it sorts the given folder into different folders with respect to the extensions 
 `After`
 ![alt text](assets/after.png)
 
+### How to use?
+You need to change the `DOWNLOADS_DIR` in settings.py and point it to your downloads directory.
+
 ### How to make custom folder and add/remove extensions?
 
 You can change it in the `src/settings.py` file
-- if u want to add more extensions just add the extensions in `DIRECTORIES` and `EXTENSION_LIST`and just group them into the folder u want
-- if u want to add a new custom folder just change in `DIRECTORIES` and `FOLDER_LIST`
+- if u want to add more extensions just add the extensions in `DIRECTORIES` and group them into the folder you want.
+- if you want to add a new custom folder just change in `DIRECTORIES` and the required extensions in it.
 
 ### Why i made it:
 
