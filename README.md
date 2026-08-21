@@ -8,7 +8,7 @@ it sorts the given folder into different folders with respect to the extensions 
 
 ### Example:
 `Before:`
-![alt text](image.png)
+![alt text](assets/before.png)
 
 `After`
 ![alt text](assets/after.png)

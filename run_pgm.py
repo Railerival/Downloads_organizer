@@ -1,4 +1,7 @@
 """
 Run this file to run the Download_organizer program
 """
-import src
+from src.downloads_organizer.__main__  import main
+
+main()
+

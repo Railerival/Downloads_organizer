@@ -1,4 +1,5 @@
 [project]
+dynamic = ["version"]
 name = "downloads_organizer"
 version = "0.1.0"
 dependencies = [
@@ -6,10 +7,10 @@ dependencies = [
 ]
 requires-python = ">=3.14"
 description = "Made to organize my downloads!! My first automation ;3"
-authors = "Railerival"
+authors = [{name = Railerival, email = lineupsvalorant8@gmail.com}, ]
 readme = "README.md"
 license = "MIT"
-license-files = "LICENSE.md"
+license-files = ["LICENSE.md",]
 #need to be added 
 keywords = ["downloads","organizer","file_sorter"] 
 classifiers = [
@@ -33,3 +34,6 @@ Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
 
 #[project.entry-points]
 #entry_point = "run_pgm.py"
+
+[tool.setuptools.dynamic]
+version.attr = "downloads_organizer.__version__"
