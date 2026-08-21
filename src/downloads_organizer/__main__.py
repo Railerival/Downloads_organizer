@@ -4,13 +4,9 @@ import time
 
 from . import settings
 
-child_list = []
-
-
 def clear_screen() -> None:
     """Clear terminal by calling this function"""
     print("\x1b[2J\x1b[H", end="")
-
 
 def move(child_list) -> None:
     """moves the files and folders in their respective folder"""
@@ -27,13 +23,11 @@ def move(child_list) -> None:
                 if not (child.suffix in settings.EXTENSION_LIST):
                     shutil.move(child, settings.MISCS_PATH)
 
-
 def update_child_list(child_list) -> None:
     """makes a list of childs of downloads folder excluding the custom directories"""
     for child in settings.DOWNLOADS_PATH.iterdir():
         if child not in settings.folder_path_list:
             child_list.append(child)
-
 
 def make_dir() -> None:
     """makes dir from DIRECTORIES"""
@@ -41,14 +35,14 @@ def make_dir() -> None:
         new_dir_path = settings.DOWNLOADS_PATH / new_dir
         new_dir_path.mkdir(exist_ok=True)
 
-
 def startswith_dot(string: str) -> bool:
     """checks if string startswitch dot and returns bool"""
     return string.startswith(".")
 
 
-def main(child_list) -> None:
+def main() -> None:
     """main function"""
+    child_list = []
     ext_check = True
 
     clear_screen()
@@ -95,4 +89,5 @@ def main(child_list) -> None:
         time.sleep(0.1)
 
 
-main(child_list)
+if __name__ == "__main__":
+    main()
