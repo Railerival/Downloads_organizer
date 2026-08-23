@@ -37,3 +37,7 @@ Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
 
 [tool.setuptools.dynamic]
 version.attr = "downloads_organizer.__version__"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
