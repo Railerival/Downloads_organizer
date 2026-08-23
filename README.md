@@ -8,10 +8,10 @@ it sorts the given folder into different folders with respect to the extensions 
 
 ### Example:
 `Before:`
-![alt text](assets/before.png)
+![alt text](https://raw.githubusercontent.com/Railerival/Downloads_organizer/main/assets/before.png)
 
 `After`
-![alt text](assets/after.png)
+![alt text](https://raw.githubusercontent.com/Railerival/Downloads_organizer/main/assets/after.png)
 
 ### How to use?
 You need to change the `DOWNLOADS_DIR` in settings.py and point it to your downloads directory.

@@ -1,13 +1,13 @@
 [project]
-dynamic = ["version"]
-name = "downloads_organizer"
-version = "0.1.0"
+name = "downloads_organizer_railerival"
+version = "0.1.1"
 dependencies = [
     "pytest-mock>=3.15.1",
+    "twine>=7.0.0",
 ]
 requires-python = ">=3.14"
 description = "Made to organize my downloads!! My first automation ;3"
-authors = [{name = Railerival, email = lineupsvalorant8@gmail.com}, ]
+authors = [{name = "Railerival", email = "lineupsvalorant8@gmail.com"}, ]
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE.md",]
@@ -27,7 +27,7 @@ tester = ["pytest>=9.1.1"]
 [project.urls]
 Repository = "https://github.com/Railerival/Downloads_organizer"
 Issues = "https://github.com/Railerival/Downloads_organizer/issues"
-Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+Changelog = "https://github.com/Railerival/Downloads_organizer/blob/main/CHANGELOG.md"
 
 #[project.scripts]
 #run_program = "run_pgm.py"
