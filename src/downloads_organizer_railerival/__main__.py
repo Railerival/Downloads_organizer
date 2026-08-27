@@ -2,7 +2,7 @@ import shutil
 import sys
 import time
 
-from . import settings
+import settings
 
 def clear_screen() -> None:
     """Clear terminal by calling this function"""

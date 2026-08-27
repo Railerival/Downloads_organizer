@@ -1,6 +1,6 @@
 from pathlib import Path
 
-DOWNLOADS_DIR = "/home/rai/Desktop/fake_downloads"
+DOWNLOADS_DIR = r"/home/rai/Desktop/fake_downloads"
 DOWNLOADS_PATH = Path(DOWNLOADS_DIR)
 
 DIRECTORIES = {

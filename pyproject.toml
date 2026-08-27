@@ -1,6 +1,6 @@
 [project]
 name = "downloads_organizer_railerival"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
     "pytest-mock>=3.15.1",
     "twine>=7.0.0",
@@ -41,3 +41,6 @@ version.attr = "downloads_organizer.__version__"
 [build-system]
 requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
+
+[project.scripts]
+organize = "pkgsample.add_cli:main"
