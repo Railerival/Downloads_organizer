@@ -1,3 +1,4 @@
+import pathlib
 import shutil
 import sys
 import time
@@ -18,10 +19,17 @@ def move(child_list) -> None:
             if isinstance(extensions, tuple) and bool(extensions):
                 for extension in extensions:
                     if (child.suffix).lower() == extension and (not child.is_dir()):
-                        shutil.move(child, new_dir_path)
+                        move_command(child, new_dir_path)
             else:
                 if not (child.suffix in settings.EXTENSION_LIST):
-                    shutil.move(child, settings.MISCS_PATH)
+                    move_command(child, settings.MISCS_PATH)
+
+def move_command(child, dst):
+    """moves the child and replaces if already present"""
+    if dst.is_dir() or dst.is_file():
+        dst.replace(child)
+    else:
+        shutil.move(child, dest)
 
 def update_child_list(child_list) -> None:
     """makes a list of childs of downloads folder excluding the custom directories"""
