@@ -5,7 +5,7 @@ dependencies = [
     "pytest-mock>=3.15.1",
     "twine>=7.0.0",
 ]
-requires-python = ">=3.14"
+requires-python = ">=3.12.3"
 description = "Made to organize my downloads!! My first automation ;3"
 authors = [{name = "Railerival", email = "lineupsvalorant8@gmail.com"}, ]
 readme = "README.md"
@@ -43,4 +43,9 @@ requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [project.scripts]
-organize = "pkgsample.add_cli:main"
+organize = "downloads_organizer_railerival.cli:app"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.venv_testing",
+]
